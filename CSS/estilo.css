@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+/*========Estilos Generales===========*/
+
+* {
+    font-family: 'Kalam', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+body {
+    background: #eee;
+    height: 3000px;
+}
+
+.heading {
+    color: #333;
+    font-size: 3.5rem;
+    padding: 1rem;
+    padding-top: 6rem;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+.heading span {
+    color: #0098a1;
+}
+
+header {
+    width: 96%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    padding: .3rem 2rem;
+    transition: .2s linear;
+    z-index: 1000;
+}
+
+.header-active {
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+header .logo {
+    color: #333;
+    font-size: 3rem;
+}
+
+header .logo span {
+    color: #0098a1;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #333;
+    transition: .2s linear;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color: #0098a1;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #0098a1;
+    cursor: pointer;
+    display: none;
+}
+
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 2rem 10rem;
+}
+
+.inicio .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.inicio .contenedor {
+    margin-top: 7rem;
+}
+
+.inicio .contenedor h1 {
+    font-size: 6.1vw;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem #000;
+}
+
+.inicio .contenedor p {
+    font-size: 1.5vw;
+    color: #eee;
+    text-shadow: 0 .3rem .5rem #000;
+    padding-left: 2rem;
+    border-left: .3rem solid #ddd;
+}
+
+.inicio .form-contenedor form {
+    margin-top: 8rem;
+    padding: 2rem;
+    width: 40rem;
+    background-color: #fff;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .9);
+    border: .5rem;
+}
+
+.inicio .form-contenedor form h3 {
+    color: #333;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.inicio .form-contenedor form span {
+    color: #0098a1;
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    display: block;
+}
+
+.inicio .form-contenedor form input {
+    width: 100%;
+    padding: 0 .1rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background: #eee;
+    border: none;
+    outline: none;
+    color: #333;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    border-radius: .5rem;
+}
+
+.inicio .form-contenedor form input[type="submit"] {
+    width: 10rem;
+    color: #fff;
+    background: #0098a1;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2rem;
+    transition: .2s linear;
+}
+
+.inicio .form-contenedor form input[type="submit"]:hover {
+    border: .2rem solid #0098a1;
+    color: #0098a1;
+    background: none;
+}
+
+.caracteristica {
+    height: 210vh;
+    background: #f9f9f9;
+}
+
+.caracteristica .card-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.caracteristica .card-contenedor .tarjeta {
+    width: 30rem;
+    margin: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    overflow: hidden;
+    position: relative;
+}
+
+.caracteristica .card-contenedor .tarjeta img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caracteristica .card-contenedor .contenedor {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.caracteristica .card-contenedor .contenedor .titulo {
+    color: #0098a1;
+    font-size: 3rem;
+}
+
+.caracteristica .card-contenedor .contenedor p {
+    color: #333;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.caracteristica .card-contenedor .contenedor .stars i {
+    padding: 0 .2rem;
+    font-size: 2rem;
+    color: gold;
+}
+
+.caracteristica .card-contenedor .contenedor .btn {
+    font-size: 1.7rem;
+    margin-top: 1.4rem;
+    height: 3.5rem;
+    width: 12rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #0098a1;
+    color: #fff;
+    transition: .2rem linear;
+}
+
+.caracteristica .card-contenedor .contenedor .btn:hover {
+    background: none;
+    border: .2rem solid #0098a1;
+    color: #0098a1;
+}
+
+.caracteristica .card-contenedor .tarjeta .discont {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    height: 3.5rem;
+    width: 6rem;
+    background: #ff3300;
+    color: #fff;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.sobre {
+    min-height: 100vh;
+}
+
+.sobre .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sobre .row .image img {
+    height: 65vh;
+    width: 45vw;
+}
+
+.sobre .row .contenedor h3 {
+    font-size: 4rem;
+    color: #0098a1;
+}
+
+.sobre .row .contenedor p {
+    font-size: 1.9rem;
+    color: #333;
+}
+
+.sobre .row .contenedor .btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s linear;
+    height: 4rem;
+    width: 18rem;
+    margin-top: 2rem;
+    color: #fff;
+    background: #0098a1;
+    font-size: 2rem;
+}
+
+.sobre .row .contenedor .btn1,
+.sobre .row .contenedor .btn:hover {
+    background: none;
+    color: #0098a1;
+    border: .2rem solid #0098a1;
+}
+
+
+/*==========Galeria=========*/
+
+.galeria {
+    min-height: 100vh;
+}
+
+.galeria .caja-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.galeria .caja-contenedor .caja {
+    height: 20rem;
+    width: 30rem;
+    margin: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.galeria .caja-contenedor .caja img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria .caja-contenedor .caja .iconos {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: linear-gradient(transparent, #333);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s linear;
+}
+
+.galeria .caja-contenedor .caja:hover .iconos {
+    opacity: 1;
+    top: 0;
+}
+
+.galeria .caja-contenedor .caja .iconos a {
+    color: #fff;
+    text-shadow: 0 .1rem .3rem #000;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.galeria .caja-contenedor .caja .iconos a:hover {
+    color: #0098a1;
+}
+
+
+/*==========Revision==========*/
+
+.revision {
+    background: url(../img/camaras.jpg), linear-gradient( #0098a1, #0098a1) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.revision .heading {
+    color: #fff;
+    padding-bottom: 4rem;
+}
+
+.revision .heading span {
+    color: gold;
+}
+
+.revision .caja-contenedor {
+    display: flex;
+    justify-content: center;
+    flex: wrap;
+}
+
+.revision .caja-contenedor .caja {
+    width: 35rem;
+    margin: 4rem 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 .3rem .5rem #000;
+    background: #fff;
+}
+
+.revision .caja-contenedor .caja .imagen {
+    margin-top: -5rem;
+}
+
+.revision .caja-contenedor .caja .imagen img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .7rem solid #fff;
+}
+
+.revision .caja-contenedor .caja .contenedor h3 {
+    font-size: 2rem;
+    color: #0098a1;
+}
+
+.revision .caja-contenedor .caja .contenedor p {
+    font-size: 1.4rem;
+    color: #333;
+    padding: .5rem 1.5rem;
+}
+
+.revision .caja-contenedor .caja .contenedor .stars i {
+    color: gold;
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
+
+
+/*============Media Queris=============*/
+
+@media (max-width: 991px) {
+    .inicio {
+        flex-flow: column;
+        padding: 1.5rem;
+    }
+    .inicio .contenedor {
+        text-align: center;
+    }
+    .inicio .contenedor h1 {
+        font-size: 5.5rem;
+    }
+    .inicio .contenedor p {
+        font-size: 1.8rem;
+        padding: 0;
+        border: none;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    header .fa-bars {
+        display: block;
+    }
+    header .navbar {
+        position: fixed;
+        top: -100rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: #fff;
+        border-radius: .5rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+        z-index: 1000;
+        transition: .2s linear;
+        opacity: 0;
+    }
+    header .navbar ul {
+        flex-flow: column;
+    }
+    header .navbar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    header .navbar ul li a {
+        display: block;
+        font-size: 3rem;
+    }
+    header .nav-toggle {
+        top: 5.5rem;
+        opacity: 1;
+    }
+    .sobre .row {
+        flex-flow: column;
+    }
+    .sobre .row .image img {
+        width: 90vh;
+    }
+    .sobre .row .contenedor {
+        text-align: center;
+    }
+    .sobre .row .contenedor .btn1 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .inicio .form-contenedor {
+        width: 100%;
+    }
+    .inicio .form-contenedor form {
+        margin: 3rem 0;
+    }
+    .inicio .form-contenedor form input[type="submit"] {
+        width: 100%;
+    }
+}
